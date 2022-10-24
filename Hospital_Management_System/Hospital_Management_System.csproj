@@ -90,24 +90,30 @@
     <Compile Include="Add_User.Designer.cs">
       <DependentUpon>Add_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Biologist.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Biologist.Designer.cs">
-      <DependentUpon>Biologist.cs</DependentUpon>
+    <Compile Include="Admin.designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biology Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biology Department.designer.cs">
+      <DependentUpon>Biology Department.cs</DependentUpon>
     </Compile>
     <Compile Include="DBconnection.cs" />
-    <Compile Include="Doctor_Home.cs">
+    <Compile Include="Doctor Department.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctor_Home.Designer.cs">
-      <DependentUpon>Doctor_Home.cs</DependentUpon>
+    <Compile Include="Doctor Department.designer.cs">
+      <DependentUpon>Doctor Department.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Login_Form.designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Manage_Users.cs">
       <SubType>Form</SubType>
@@ -115,11 +121,11 @@
     <Compile Include="Manage_Users.Designer.cs">
       <DependentUpon>Manage_Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs">
+    <Compile Include="PatientDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patient.Designer.cs">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <Compile Include="PatientDetails.designer.cs">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Pharmacist.cs">
       <SubType>Form</SubType>
@@ -127,36 +133,42 @@
     <Compile Include="Pharmacist.Designer.cs">
       <DependentUpon>Pharmacist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receptionist.cs">
+    <Compile Include="Pharmacy Department.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Receptionist.Designer.cs">
-      <DependentUpon>Receptionist.cs</DependentUpon>
+    <Compile Include="Pharmacy Department.designer.cs">
+      <DependentUpon>Pharmacy Department.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserBase.cs" />
     <EmbeddedResource Include="Add_User.resx">
       <DependentUpon>Add_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Biologist.resx">
-      <DependentUpon>Biologist.cs</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctor_Home.resx">
-      <DependentUpon>Doctor_Home.cs</DependentUpon>
+    <EmbeddedResource Include="Biology Department.resx">
+      <DependentUpon>Biology Department.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Doctor Department.resx">
+      <DependentUpon>Doctor Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Users.resx">
       <DependentUpon>Manage_Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient.resx">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <EmbeddedResource Include="PatientDetails.resx">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist.resx">
       <DependentUpon>Pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Department.resx">
+      <DependentUpon>Pharmacy Department.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,10 +178,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Receptionist.resx">
-      <DependentUpon>Receptionist.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -183,6 +193,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Profile-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-10-25 at 00.00.34.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,7 +22,7 @@ namespace Hospital_Management_System
             }
             catch (MySqlException e)
             {
-                MessageBox.Show("MySQL Connection! \n"+e.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("MySQL Connection! \n" + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return conn;
         }
@@ -48,10 +48,10 @@ namespace Hospital_Management_System
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Successfully! \n" , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Added Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -91,7 +91,7 @@ namespace Hospital_Management_System
         }
 
         //delete user
-        public static void  DeleteUser(string id)
+        public static void DeleteUser(string id)
         {
             string sql = "DELETE FROM Users Where Id = @id";
             MySqlConnection con = GetConnection();
@@ -126,16 +126,15 @@ namespace Hospital_Management_System
         }
 
         //user login
-        public static void UserLogin(string email,string pass,User user)
+        public static void UserLogin(string email, string pass, User user)
         {
             string sql = "SELECT * FROM Users WHERE Email=@email and Password=@password";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = System.Data.CommandType.Text;
-           cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+            cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = pass;
 
-           
             try
             {
                 cmd.ExecuteNonQuery();
@@ -144,15 +143,16 @@ namespace Hospital_Management_System
                 {
                     user.first_name = reader["First_Name"].ToString();
                     user.type = reader["User_Type"].ToString();
-                   MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
-                    
+                    if (user.type != "Patient")
+                    {
+                        MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Email or Password Incorrect \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-  
+
             }
             catch (MySqlException ex)
             {
