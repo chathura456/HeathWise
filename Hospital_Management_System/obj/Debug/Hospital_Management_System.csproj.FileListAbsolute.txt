@@ -3,7 +3,9 @@ D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assign
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.pdb
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.AssemblyReference.cache
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.SuggestedBindingRedirects.cache
+D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Login.resources
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Properties.Resources.resources
+D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Receptionist.resources
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.GenerateResource.cache
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.CoreCompileInputs.cache
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.exe
@@ -33,10 +35,52 @@ D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assign
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Numerics.Vectors.xml
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.CopyComplete
+D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Doctor_Home.resources
+D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Biologist.resources
+D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Patient.resources
 D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Pharmacist.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Login_Form.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Admin.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.PatientDetails.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Biology_Department.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Doctor_Department.resources
-D:\Campus\Year 02 Semester 02\Business Processes and ERP\C# Assignment\C# Assignment - Hospital System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Pharmacist_Department.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.exe.config
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.exe
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.pdb
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Google.Protobuf.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\MySql.Data.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Buffers.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Memory.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\ZstdNet.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Google.Protobuf.pdb
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\Google.Protobuf.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\MySql.Data.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Buffers.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Memory.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.AssemblyReference.cache
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.SuggestedBindingRedirects.cache
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Add_User.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Biologist.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Doctor_Home.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Login.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Manage_Users.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Patient.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Patient_Reg.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Pharmacist.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Properties.Resources.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.Receptionist.resources
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.GenerateResource.cache
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.CoreCompileInputs.cache
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.CopyComplete
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.exe
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.pdb
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\Stephan\Desktop\Hospital_System\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.PatientPrescription.resources
