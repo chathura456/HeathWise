@@ -36,9 +36,6 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\..\krypton\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -61,7 +58,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
@@ -94,24 +90,30 @@
     <Compile Include="Add_User.Designer.cs">
       <DependentUpon>Add_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Biologist.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Biologist.Designer.cs">
-      <DependentUpon>Biologist.cs</DependentUpon>
+    <Compile Include="Admin.designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biology Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biology Department.designer.cs">
+      <DependentUpon>Biology Department.cs</DependentUpon>
     </Compile>
     <Compile Include="DBconnection.cs" />
-    <Compile Include="Doctor_Home.cs">
+    <Compile Include="Doctor Department.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctor_Home.Designer.cs">
-      <DependentUpon>Doctor_Home.cs</DependentUpon>
+    <Compile Include="Doctor Department.designer.cs">
+      <DependentUpon>Doctor Department.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Login_Form.designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Manage_Users.cs">
       <SubType>Form</SubType>
@@ -119,11 +121,11 @@
     <Compile Include="Manage_Users.Designer.cs">
       <DependentUpon>Manage_Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs">
+    <Compile Include="PatientDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patient.Designer.cs">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <Compile Include="PatientDetails.designer.cs">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientPrescription.cs">
       <SubType>Form</SubType>
@@ -132,55 +134,70 @@
       <DependentUpon>PatientPrescription.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientsRegistration.cs" />
-    <Compile Include="Patient_Reg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Patient_Reg.Designer.cs">
-      <DependentUpon>Patient_Reg.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pharmacist.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pharmacist.Designer.cs">
       <DependentUpon>Pharmacist.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfilePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilePatient.designer.cs">
+      <DependentUpon>ProfilePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchApointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchApointment.designer.cs">
+      <DependentUpon>SearchApointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Department.designer.cs">
+      <DependentUpon>Pharmacy Department.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prescription.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receptionist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receptionist.Designer.cs">
-      <DependentUpon>Receptionist.cs</DependentUpon>
-    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserBase.cs" />
     <EmbeddedResource Include="Add_User.resx">
       <DependentUpon>Add_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Biologist.resx">
-      <DependentUpon>Biologist.cs</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctor_Home.resx">
-      <DependentUpon>Doctor_Home.cs</DependentUpon>
+    <EmbeddedResource Include="Biology Department.resx">
+      <DependentUpon>Biology Department.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Doctor Department.resx">
+      <DependentUpon>Doctor Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_Users.resx">
       <DependentUpon>Manage_Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient.resx">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <EmbeddedResource Include="PatientDetails.resx">
+      <DependentUpon>PatientDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientPrescription.resx">
       <DependentUpon>PatientPrescription.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient_Reg.resx">
-      <DependentUpon>Patient_Reg.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist.resx">
       <DependentUpon>Pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilePatient.resx">
+      <DependentUpon>ProfilePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchApointment.resx">
+      <DependentUpon>SearchApointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Department.resx">
+      <DependentUpon>Pharmacy Department.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,10 +207,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Receptionist.resx">
-      <DependentUpon>Receptionist.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -207,6 +222,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Profile-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-10-25 at 00.00.34.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

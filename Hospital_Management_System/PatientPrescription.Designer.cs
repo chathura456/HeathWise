@@ -54,6 +54,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.date_picker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
+            this.btanClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_lname
@@ -122,7 +123,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(494, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -327,11 +328,28 @@
             this.label5.TabIndex = 76;
             this.label5.Text = "Date";
             // 
+            // btanClose
+            // 
+            this.btanClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btanClose.ForeColor = System.Drawing.Color.DarkRed;
+            this.btanClose.Location = new System.Drawing.Point(746, 752);
+            this.btanClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btanClose.Name = "btanClose";
+            this.btanClose.Size = new System.Drawing.Size(142, 51);
+            this.btanClose.TabIndex = 77;
+            this.btanClose.Text = "Close";
+            this.btanClose.UseVisualStyleBackColor = true;
+            this.btanClose.Click += new System.EventHandler(this.btanClose_Click);
+            // 
             // PatientPrescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 944);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.CausesValidation = false;
+            this.ClientSize = new System.Drawing.Size(1200, 860);
+            this.Controls.Add(this.btanClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.date_picker);
             this.Controls.Add(this.btnReset);
@@ -362,6 +380,7 @@
             this.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Prescription";
+            this.Load += new System.EventHandler(this.PatientPrescription_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +413,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.DateTimePicker date_picker;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btanClose;
     }
 }

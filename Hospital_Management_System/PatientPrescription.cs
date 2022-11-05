@@ -14,11 +14,11 @@ namespace Hospital_Management_System
 {
     public partial class PatientPrescription : Form
     {
-        private readonly Doctor_Home _parent;
+        private readonly Doctor_Department _parent;
         public string ssno,fname1,lname1,did1,drname;
         public string date;
 
-        public PatientPrescription(Doctor_Home parent)
+        public PatientPrescription(Doctor_Department parent)
         {
             InitializeComponent();
             _parent = parent;
@@ -45,7 +45,17 @@ namespace Hospital_Management_System
 
         }
 
-     //clear user inputs
+        private void PatientPrescription_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btanClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        //clear user inputs
         public void clear()
         {
             txt_age.Clear();

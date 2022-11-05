@@ -14,7 +14,8 @@ namespace Hospital_Management_System
 {
     public class DBconnection
     {
-        public static string id,name;
+        public static string id, name,specialist,phoneNumber;
+       public static string diagnosis, medicine,profileid,profilename;
         //create mysql connection
         public static MySqlConnection GetConnection()
         {
@@ -26,7 +27,7 @@ namespace Hospital_Management_System
             }
             catch (MySqlException e)
             {
-                MessageBox.Show("MySQL Connection! \n"+e.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("MySQL Connection! \n" + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return conn;
         }
@@ -52,10 +53,10 @@ namespace Hospital_Management_System
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Successfully! \n" , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Added Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
                 MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -95,7 +96,7 @@ namespace Hospital_Management_System
         }
 
         //delete user
-        public static void  DeleteUser(string id)
+        public static void DeleteUser(string id)
         {
             string sql = "DELETE FROM Users Where Id = @id";
             MySqlConnection con = GetConnection();
@@ -128,18 +129,18 @@ namespace Hospital_Management_System
             dgv.DataSource = dataTable;
             con.Close();
         }
-        
+
         //user login
-        public static void UserLogin(string email,string pass,User user)
+        public static void UserLogin(string email, string pass, User user)
         {
             string sql = "SELECT * FROM Users WHERE Email=@email and Password=@password";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = System.Data.CommandType.Text;
-           cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
+            cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = pass;
 
-           
+
             try
             {
                 cmd.ExecuteNonQuery();
@@ -148,17 +149,19 @@ namespace Hospital_Management_System
                 {
                     user.first_name = reader["First_Name"].ToString();
                     user.type = reader["User_Type"].ToString();
-                     id=reader["id"].ToString();
-                    name=reader["First_name"].ToString();
+                    id = reader["id"].ToString();
+                    name = reader["First_name"].ToString();
+                    specialist = reader["Specialist"].ToString();
+                    phoneNumber = reader["Phone_No"].ToString();
                     MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   
-                    
+
+
                 }
                 else
                 {
                     MessageBox.Show("Email or Password Incorrect \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-  
+
             }
             catch (MySqlException ex)
             {
@@ -206,7 +209,7 @@ namespace Hospital_Management_System
 
         //find the doctor according to patient registration
 
-        public static string findDoctor(string specialist,string drName)
+        public static string findDoctor(string specialist, string drName)
         {
             string id;
             string sql = "SELECT Id  FROM users WHERE Specialist=@specialis and First_Name=@fname";
@@ -232,21 +235,21 @@ namespace Hospital_Management_System
 
 
             return null;
-            
-                
+
+
 
         }
 
         //add patient for doctors waiting list
 
 
-        public static void AddPatientWaitingList(string fname,string lname)
+        public static void AddPatientWaitingList(string fname, string lname)
         {
-            string sql = "INSERT INTO patientswaiting SELECT SSNo,First_Name,Last_Name,Reg_Date,Appointed_Specialist,Appointed_Dr,DId FROM patientsdetails WHERE First_Name='"+fname+ "' and Last_Name='"+lname+"' ";
+            string sql = "INSERT INTO patientswaiting SELECT SSNo,First_Name,Last_Name,Reg_Date,Appointed_Specialist,Appointed_Dr,DId FROM patientsdetails WHERE First_Name='" + fname + "' and Last_Name='" + lname + "' ";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = System.Data.CommandType.Text;
-        
+
             try
             {
                 cmd.ExecuteNonQuery();
@@ -337,6 +340,46 @@ namespace Hospital_Management_System
             }
             con.Close();
         }
+
+
+
+        //switch patient to the lab tesing list
+        public static void showProfile(string id)
+        {
+            profileid = id;
+            string sql = "SELECT First_Name, Diagnosis,Medicines FROM patientsprescription Where SSNo = @id";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                 
+                    diagnosis = reader["Diagnosis"].ToString();
+                    medicine = reader["Medicines"].ToString();
+                    profilename = reader["First_Name"].ToString();
+
+                }
+                else
+                {
+                    diagnosis = null;
+                    medicine = null;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+
+
 
 
 
