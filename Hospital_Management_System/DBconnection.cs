@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
+using Org.BouncyCastle.Bcpg;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Hospital_Management_System
 {
     public class DBconnection
     {
+        public static string id, name,specialist,phoneNumber;
+       public static string diagnosis, medicine,profileid,profilename;
         //create mysql connection
         public static MySqlConnection GetConnection()
         {
@@ -135,6 +140,7 @@ namespace Hospital_Management_System
             cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = pass;
 
+
             try
             {
                 cmd.ExecuteNonQuery();
@@ -143,10 +149,13 @@ namespace Hospital_Management_System
                 {
                     user.first_name = reader["First_Name"].ToString();
                     user.type = reader["User_Type"].ToString();
-                    if (user.type != "Patient")
-                    {
-                        MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    id = reader["id"].ToString();
+                    name = reader["First_name"].ToString();
+                    specialist = reader["Specialist"].ToString();
+                    phoneNumber = reader["Phone_No"].ToString();
+                    MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                 }
                 else
                 {
@@ -160,5 +169,220 @@ namespace Hospital_Management_System
             }
             con.Close();
         }
+
+
+        //Add patient details to the database 
+
+        public static void AddPatient(PatientsRegistration patient)
+        {
+            string sql = "INSERT INTO patientsdetails Values (null,@First_Name,@Last_name,@Gender,@Birth_Date,@Phone_No,@Weight,@height,@Blood_Type,@Address,@Reg_Date,@Appointed_Specialist,@Appointed_Dr,@DId)";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@First_Name", MySqlDbType.VarChar).Value = patient.first_name;
+            cmd.Parameters.Add("@Last_name", MySqlDbType.VarChar).Value = patient.last_name;
+            cmd.Parameters.Add("@Gender", MySqlDbType.VarChar).Value = patient.gender;
+            cmd.Parameters.Add("@Birth_Date", MySqlDbType.VarChar).Value = patient.birth_date;
+            cmd.Parameters.Add("@Phone_No", MySqlDbType.VarChar).Value = patient.phone;
+            cmd.Parameters.Add("@Weight", MySqlDbType.VarChar).Value = patient.weight;
+            cmd.Parameters.Add("@height", MySqlDbType.VarChar).Value = patient.height;
+            cmd.Parameters.Add("@Blood_Type", MySqlDbType.VarChar).Value = patient.bloodType;
+            cmd.Parameters.Add("@Address", MySqlDbType.VarChar).Value = patient.address;
+            cmd.Parameters.Add("@Reg_Date", MySqlDbType.VarChar).Value = patient.reg_day;
+            cmd.Parameters.Add("@Appointed_Specialist", MySqlDbType.VarChar).Value = patient.specilist;
+            cmd.Parameters.Add("@Appointed_Dr", MySqlDbType.VarChar).Value = patient.drname;
+            cmd.Parameters.Add("@DId", MySqlDbType.VarChar).Value = patient.dId;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Added Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+
+        //find the doctor according to patient registration
+
+        public static string findDoctor(string specialist, string drName)
+        {
+            string id;
+            string sql = "SELECT Id  FROM users WHERE Specialist=@specialis and First_Name=@fname";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@specialis", MySqlDbType.VarChar).Value = specialist;
+            cmd.Parameters.Add("@fname", MySqlDbType.VarChar).Value = drName;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                id = reader["Id"].ToString();
+                return id;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Cannot Find Doctor! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+
+
+            return null;
+
+
+
+        }
+
+        //add patient for doctors waiting list
+
+
+        public static void AddPatientWaitingList(string fname, string lname)
+        {
+            string sql = "INSERT INTO patientswaiting SELECT SSNo,First_Name,Last_Name,Reg_Date,Appointed_Specialist,Appointed_Dr,DId FROM patientsdetails WHERE First_Name='" + fname + "' and Last_Name='" + lname + "' ";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Added Successfully for waiting list! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! waiting list \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+        //remove patient form waiting list
+        public static void RemovePatient(string id)
+        {
+            string sql = "DELETE FROM patientswaiting Where SSNo = @id";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Remove form queue Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+        //switch patient to the lab tesing list
+        public static void AddPatientTOLab(string id)
+        {
+            string sql = "INSERT INTO patientlab SELECT * FROM patientswaiting Where SSNo = @id";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Added to Lab queue Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+
+
+
+        //Add patient's prescription  details to the database 
+
+        public static void AddPrescription(Prescription prescription)
+        {
+            string sql = "INSERT INTO patientsprescription Values (@SSNo,@First_Name,@Last_name,@Date,@Age,@Diagnosis,@Medicines,@Notes,@Appointed_Dr,@DId)";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@SSNo", MySqlDbType.VarChar).Value = prescription.ssno;
+            cmd.Parameters.Add("@First_Name", MySqlDbType.VarChar).Value = prescription.fname1;
+            cmd.Parameters.Add("@Last_name", MySqlDbType.VarChar).Value = prescription.lname1;
+            cmd.Parameters.Add("@Date", MySqlDbType.VarChar).Value = prescription.date;
+            cmd.Parameters.Add("@Age", MySqlDbType.VarChar).Value = prescription.age;
+            cmd.Parameters.Add("@Diagnosis", MySqlDbType.VarChar).Value = prescription.diagnosis;
+            cmd.Parameters.Add("@Medicines", MySqlDbType.VarChar).Value = prescription.medicine;
+            cmd.Parameters.Add("@Notes", MySqlDbType.VarChar).Value = prescription.other;
+            cmd.Parameters.Add("@Appointed_Dr", MySqlDbType.VarChar).Value = prescription.drname;
+            cmd.Parameters.Add("@DId", MySqlDbType.VarChar).Value = prescription.did1;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Prescription Added Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+
+
+        //switch patient to the lab tesing list
+        public static void showProfile(string id)
+        {
+            profileid = id;
+            string sql = "SELECT First_Name, Diagnosis,Medicines FROM patientsprescription Where SSNo = @id";
+            MySqlConnection con = GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                 
+                    diagnosis = reader["Diagnosis"].ToString();
+                    medicine = reader["Medicines"].ToString();
+                    profilename = reader["First_Name"].ToString();
+
+                }
+                else
+                {
+                    diagnosis = null;
+                    medicine = null;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("MySQL Connection! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            con.Close();
+        }
+
+
+
+
+
+
+
     }
 }

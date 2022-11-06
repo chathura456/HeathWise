@@ -12,6 +12,7 @@ namespace Hospital_Management_System
 {
     public partial class Admin : Form
     {
+        public string id, name, phone;
         public Admin()
         {
             InitializeComponent();
@@ -24,9 +25,23 @@ namespace Hospital_Management_System
             Hide();
         }
 
+
+        //show user detais
         private void Form1_Load(object sender, EventArgs e)
         {
+            id = DBconnection.id;
+            name = DBconnection.name;
+            phone = DBconnection.phoneNumber;
+            textBox1.Text=id;
+            textBox2.Text=name;
+            textBox3.Text=phone;
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PatientDetails patientDetails = new PatientDetails();
+            patientDetails.Show();
+            Hide();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -36,8 +51,8 @@ namespace Hospital_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PatientDetails patientDetails = new PatientDetails();
-            patientDetails.Show();
+            SearchApointment appointment = new SearchApointment();
+            appointment.Show();
             Hide();
         }
     }

@@ -1,4 +1,7 @@
-﻿namespace Hospital_Management_System
+﻿using System;
+using System.Windows.Forms;
+
+namespace Hospital_Management_System
 {
     partial class PatientDetails
     {
@@ -28,29 +31,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientDetails));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_submit = new System.Windows.Forms.Button();
+            this.txt_drName = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxSpecialist = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.reg_picker = new System.Windows.Forms.DateTimePicker();
+            this.txt_address = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Btype = new System.Windows.Forms.TextBox();
+            this.txt_height = new System.Windows.Forms.TextBox();
+            this.txt_weight = new System.Windows.Forms.TextBox();
+            this.radiobtn_female = new System.Windows.Forms.CheckBox();
+            this.radiobtn_male = new System.Windows.Forms.CheckBox();
+            this.birth_picker = new System.Windows.Forms.DateTimePicker();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.txt_lname = new System.Windows.Forms.TextBox();
+            this.txt_fname = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,71 +62,62 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btn_reset
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(415, 561);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 50);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_reset.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_reset.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Location = new System.Drawing.Point(622, 863);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(128, 77);
+            this.btn_reset.TabIndex = 39;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
-            // button1
+            // btn_submit
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(269, 561);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 50);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_submit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_submit.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.Location = new System.Drawing.Point(404, 863);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(129, 77);
+            this.btn_submit.TabIndex = 38;
+            this.btn_submit.Text = "Save";
+            this.btn_submit.UseVisualStyleBackColor = false;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
-            // textBox7
+            // txt_drName
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox7.Location = new System.Drawing.Point(221, 102);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(187, 25);
-            this.textBox7.TabIndex = 57;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8.Location = new System.Drawing.Point(221, 62);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(187, 25);
-            this.textBox8.TabIndex = 56;
+            this.txt_drName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_drName.Location = new System.Drawing.Point(332, 157);
+            this.txt_drName.Name = "txt_drName";
+            this.txt_drName.Size = new System.Drawing.Size(278, 33);
+            this.txt_drName.TabIndex = 57;
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(76, 104);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(114, 160);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(120, 22);
+            this.label14.Size = new System.Drawing.Size(176, 31);
             this.label14.TabIndex = 55;
             this.label14.Text = "Doctor Name";
             // 
@@ -132,45 +126,53 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(76, 65);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(114, 100);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 22);
+            this.label15.Size = new System.Drawing.Size(127, 31);
             this.label15.TabIndex = 54;
             this.label15.Text = "Specialist";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.comboBoxSpecialist);
+            this.groupBox1.Controls.Add(this.txt_drName);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(194, 339);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(291, 522);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(481, 181);
+            this.groupBox1.Size = new System.Drawing.Size(722, 278);
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doctor Details";
             // 
+            // comboBoxSpecialist
+            // 
+            this.comboBoxSpecialist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSpecialist.FormattingEnabled = true;
+            this.comboBoxSpecialist.Location = new System.Drawing.Point(331, 94);
+            this.comboBoxSpecialist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxSpecialist.Name = "comboBoxSpecialist";
+            this.comboBoxSpecialist.Size = new System.Drawing.Size(278, 37);
+            this.comboBoxSpecialist.TabIndex = 66;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.reg_picker);
+            this.groupBox2.Controls.Add(this.txt_address);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txt_Btype);
+            this.groupBox2.Controls.Add(this.txt_height);
+            this.groupBox2.Controls.Add(this.txt_weight);
+            this.groupBox2.Controls.Add(this.radiobtn_female);
+            this.groupBox2.Controls.Add(this.radiobtn_male);
+            this.groupBox2.Controls.Add(this.birth_picker);
+            this.groupBox2.Controls.Add(this.txt_phone);
+            this.groupBox2.Controls.Add(this.txt_lname);
+            this.groupBox2.Controls.Add(this.txt_fname);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
@@ -179,153 +181,143 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox2.Location = new System.Drawing.Point(194, 33);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(291, 51);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(1062, 334);
+            this.groupBox2.Size = new System.Drawing.Size(1593, 514);
             this.groupBox2.TabIndex = 59;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Patient Details";
             // 
-            // textBox9
+            // label1
             // 
-            this.textBox9.Location = new System.Drawing.Point(794, 210);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(192, 71);
-            this.textBox9.TabIndex = 60;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(114, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 31);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Date";
+            // 
+            // reg_picker
+            // 
+            this.reg_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reg_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.reg_picker.Location = new System.Drawing.Point(332, 119);
+            this.reg_picker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reg_picker.Name = "reg_picker";
+            this.reg_picker.Size = new System.Drawing.Size(278, 35);
+            this.reg_picker.TabIndex = 76;
+            // 
+            // txt_address
+            // 
+            this.txt_address.Location = new System.Drawing.Point(1191, 323);
+            this.txt_address.Multiline = true;
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(286, 107);
+            this.txt_address.TabIndex = 60;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(616, 210);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(924, 323);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 22);
+            this.label7.Size = new System.Drawing.Size(112, 31);
             this.label7.TabIndex = 75;
             this.label7.Text = "Address";
             // 
-            // textBox6
+            // txt_Btype
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6.Location = new System.Drawing.Point(794, 163);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(192, 25);
-            this.textBox6.TabIndex = 74;
+            this.txt_Btype.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_Btype.Location = new System.Drawing.Point(1191, 251);
+            this.txt_Btype.Name = "txt_Btype";
+            this.txt_Btype.Size = new System.Drawing.Size(286, 33);
+            this.txt_Btype.TabIndex = 74;
             // 
-            // textBox5
+            // txt_height
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox5.Location = new System.Drawing.Point(794, 124);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(192, 25);
-            this.textBox5.TabIndex = 73;
+            this.txt_height.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_height.Location = new System.Drawing.Point(1191, 191);
+            this.txt_height.Name = "txt_height";
+            this.txt_height.Size = new System.Drawing.Size(286, 33);
+            this.txt_height.TabIndex = 73;
             // 
-            // textBox1
+            // txt_weight
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(794, 80);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 25);
-            this.textBox1.TabIndex = 72;
+            this.txt_weight.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_weight.Location = new System.Drawing.Point(1191, 123);
+            this.txt_weight.Name = "txt_weight";
+            this.txt_weight.Size = new System.Drawing.Size(286, 33);
+            this.txt_weight.TabIndex = 72;
             // 
-            // comboBox2
+            // radiobtn_female
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Patient",
-            "Doctor",
-            "Pharmacist",
-            "Biologist",
-            "Receptionist"});
-            this.comboBox2.Location = new System.Drawing.Point(221, 80);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(187, 27);
-            this.comboBox2.TabIndex = 70;
+            this.radiobtn_female.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radiobtn_female.AutoSize = true;
+            this.radiobtn_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtn_female.Location = new System.Drawing.Point(514, 328);
+            this.radiobtn_female.Name = "radiobtn_female";
+            this.radiobtn_female.Size = new System.Drawing.Size(109, 29);
+            this.radiobtn_female.TabIndex = 68;
+            this.radiobtn_female.Text = "Female";
+            this.radiobtn_female.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // radiobtn_male
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(343, 213);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(73, 21);
-            this.checkBox2.TabIndex = 68;
-            this.checkBox2.Text = "Female";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.radiobtn_male.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radiobtn_male.AutoSize = true;
+            this.radiobtn_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtn_male.Location = new System.Drawing.Point(332, 328);
+            this.radiobtn_male.Name = "radiobtn_male";
+            this.radiobtn_male.Size = new System.Drawing.Size(85, 29);
+            this.radiobtn_male.TabIndex = 67;
+            this.radiobtn_male.Text = "Male";
+            this.radiobtn_male.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // birth_picker
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(221, 213);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 21);
-            this.checkBox1.TabIndex = 67;
-            this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.birth_picker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.birth_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birth_picker.Location = new System.Drawing.Point(332, 383);
+            this.birth_picker.Name = "birth_picker";
+            this.birth_picker.Size = new System.Drawing.Size(278, 28);
+            this.birth_picker.TabIndex = 66;
             // 
-            // dateTimePicker1
+            // txt_phone
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(221, 249);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(187, 21);
-            this.dateTimePicker1.TabIndex = 66;
+            this.txt_phone.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_phone.Location = new System.Drawing.Point(332, 445);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(278, 33);
+            this.txt_phone.TabIndex = 65;
             // 
-            // textBox4
+            // txt_lname
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Location = new System.Drawing.Point(221, 289);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 25);
-            this.textBox4.TabIndex = 65;
+            this.txt_lname.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_lname.Location = new System.Drawing.Point(332, 249);
+            this.txt_lname.Name = "txt_lname";
+            this.txt_lname.Size = new System.Drawing.Size(278, 33);
+            this.txt_lname.TabIndex = 64;
             // 
-            // textBox3
+            // txt_fname
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Location = new System.Drawing.Point(221, 162);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 25);
-            this.textBox3.TabIndex = 64;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(221, 123);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 25);
-            this.textBox2.TabIndex = 63;
+            this.txt_fname.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_fname.Location = new System.Drawing.Point(332, 189);
+            this.txt_fname.Name = "txt_fname";
+            this.txt_fname.Size = new System.Drawing.Size(278, 33);
+            this.txt_fname.TabIndex = 63;
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(616, 164);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(924, 252);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 22);
+            this.label11.Size = new System.Drawing.Size(151, 31);
             this.label11.TabIndex = 62;
             this.label11.Text = "Blood Type";
             // 
@@ -334,10 +326,9 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(616, 123);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(924, 189);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 22);
+            this.label10.Size = new System.Drawing.Size(97, 31);
             this.label10.TabIndex = 61;
             this.label10.Text = "Height";
             // 
@@ -346,10 +337,9 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(616, 80);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(924, 123);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 22);
+            this.label9.Size = new System.Drawing.Size(103, 31);
             this.label9.TabIndex = 60;
             this.label9.Text = "Weight";
             // 
@@ -358,10 +348,9 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(76, 289);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(114, 445);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 22);
+            this.label6.Size = new System.Drawing.Size(135, 31);
             this.label6.TabIndex = 57;
             this.label6.Text = "Phone No";
             // 
@@ -370,10 +359,9 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(76, 249);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(114, 383);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 22);
+            this.label5.Size = new System.Drawing.Size(137, 31);
             this.label5.TabIndex = 56;
             this.label5.Text = "Birth Date";
             // 
@@ -382,10 +370,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 213);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(114, 328);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 22);
+            this.label4.Size = new System.Drawing.Size(102, 31);
             this.label4.TabIndex = 55;
             this.label4.Text = "Gender";
             // 
@@ -394,10 +381,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(76, 165);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(114, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 22);
+            this.label3.Size = new System.Drawing.Size(142, 31);
             this.label3.TabIndex = 54;
             this.label3.Text = "Last Name";
             // 
@@ -406,130 +392,124 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 126);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(114, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 22);
+            this.label2.Size = new System.Drawing.Size(145, 31);
             this.label2.TabIndex = 53;
             this.label2.Text = "First Name";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 84);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 22);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "SSNo";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(868, 497);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(1302, 765);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(296, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(444, 292);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // errorProvider
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.doc,
-            this.patient});
-            this.dataGridView1.Location = new System.Drawing.Point(726, 370);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(404, 130);
-            this.dataGridView1.TabIndex = 61;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.errorProvider.ContainerControl = this;
             // 
-            // ID
+            // errorProvider1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.Width = 70;
+            this.errorProvider1.ContainerControl = this;
             // 
-            // doc
+            // dataGridView2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.doc.DefaultCellStyle = dataGridViewCellStyle2;
-            this.doc.HeaderText = "Dr.Name";
-            this.doc.MinimumWidth = 10;
-            this.doc.Name = "doc";
-            this.doc.Width = 200;
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.GridColor = System.Drawing.Color.DarkGray;
+            this.dataGridView2.Location = new System.Drawing.Point(1059, 611);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(608, 148);
+            this.dataGridView2.TabIndex = 78;
             // 
-            // patient
+            // label8
             // 
-            this.patient.HeaderText = "No.of Patient";
-            this.patient.MinimumWidth = 6;
-            this.patient.Name = "patient";
-            this.patient.Width = 120;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1039, 568);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 27);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "Doctors";
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_back.BackColor = System.Drawing.Color.PowderBlue;
+            this.btn_back.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Location = new System.Drawing.Point(849, 863);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(128, 77);
+            this.btn_back.TabIndex = 80;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // PatientDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1542, 937);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1027, 597);
+            this.Controls.Add(this.btn_reset);
+            this.Controls.Add(this.btn_submit);
+            this.MinimumSize = new System.Drawing.Size(1530, 888);
             this.Name = "PatientDetails";
             this.Text = "Patient Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.PatientDetails_Load);
+            this.Load += new System.EventHandler(this.PatientDetails_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button btn_submit;
+        private System.Windows.Forms.TextBox txt_drName;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Btype;
+        private System.Windows.Forms.TextBox txt_height;
+        private System.Windows.Forms.TextBox txt_weight;
+        private System.Windows.Forms.CheckBox radiobtn_female;
+        private System.Windows.Forms.CheckBox radiobtn_male;
+        private System.Windows.Forms.DateTimePicker birth_picker;
+        private System.Windows.Forms.TextBox txt_phone;
+        private System.Windows.Forms.TextBox txt_lname;
+        private System.Windows.Forms.TextBox txt_fname;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -538,13 +518,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_address;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn patient;
+        private System.Windows.Forms.ComboBox comboBoxSpecialist;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker reg_picker;
+        private EventHandler PatientDetails_Load;
+        private ErrorProvider errorProvider;
+        private ErrorProvider errorProvider1;
+        private DataGridView dataGridView2;
+        private Label label8;
+        private Button btn_back;
+
+        public DataGridViewCellEventHandler DataGridViewDr_CellContentClick { get; private set; }
     }
 }

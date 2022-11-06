@@ -70,5 +70,13 @@ namespace Hospital_Management_System
                 return;
             }
         }
+        //back button
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.Show();
+            this.Close();
+
+        }
     }
 }
