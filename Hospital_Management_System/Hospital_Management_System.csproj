@@ -134,12 +134,6 @@
       <DependentUpon>PatientPrescription.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientsRegistration.cs" />
-    <Compile Include="Pharmacist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pharmacist.Designer.cs">
-      <DependentUpon>Pharmacist.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProfilePatient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,9 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PatientPrescription.resx">
       <DependentUpon>PatientPrescription.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pharmacist.resx">
-      <DependentUpon>Pharmacist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfilePatient.resx">
       <DependentUpon>ProfilePatient.cs</DependentUpon>

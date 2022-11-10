@@ -117,6 +117,7 @@
             // 
             this.txt_pass.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(237, 138);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(5);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(337, 30);
             this.txt_pass.TabIndex = 4;

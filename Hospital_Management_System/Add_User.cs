@@ -87,12 +87,12 @@ namespace Hospital_Management_System
             if (type == null)
             {
                 dropdown_type.Focus();
-                errorProvider1.SetError(dropdown_type, "Please Select User Type");
+                errorProvider.SetError(dropdown_type, "Please Select User Type");
             }
             else if (string.IsNullOrEmpty(txt_fname.Text.Trim()))
             {
                 txt_fname.Focus();
-                errorProvider1.SetError(txt_fname, "First Name is Required");
+                errorProvider.SetError(txt_fname, "First Name is Required");
             }
             else if (string.IsNullOrEmpty(txt_lname.Text.Trim()))
             {
@@ -143,7 +143,7 @@ namespace Hospital_Management_System
                 txt_pass2.Focus();
                 errorProvider.SetError(txt_pass2, "Password not matching");
             }
-            if (txt_pass.Text != txt_pass2.Text)
+            else if (txt_pass.Text != txt_pass2.Text)
             {
                 errorProvider.SetError(txt_pass2, "Password not matching");
             }
@@ -203,33 +203,33 @@ namespace Hospital_Management_System
         {
             if (type == null)
             {
-                errorProvider1.SetError(dropdown_type, "Please Select User's Account Type");
+                errorProvider.SetError(dropdown_type, "Please Select User's Account Type");
             }
             else
             {
-                errorProvider1.Clear();
+                errorProvider.Clear();
             }
         }
         private void txt_fname_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txt_fname.Text.Trim()))
             {
-                errorProvider1.SetError(txt_fname, "First Name is Required");
+                errorProvider.SetError(txt_fname, "First Name is Required");
             }
             else
             {
-                errorProvider1.Clear();
+                errorProvider.Clear();
             }
         }
         private void txt_lname_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txt_lname.Text.Trim()))
             {
-                errorProvider1.SetError(txt_lname, "LastName is Required");
+                errorProvider.SetError(txt_lname, "LastName is Required");
             }
             else
             {
-                errorProvider1.Clear();
+                errorProvider.Clear();
             }
         }
         private void birth_picker_Leave(object sender, EventArgs e)
@@ -336,10 +336,12 @@ namespace Hospital_Management_System
             dropdown_type.ResetText();
             birth_picker.Text = string.Empty;
             reg_picker.Text = string.Empty;
+            type1 = null;
+            special1 = null;
             reg_day = null;
             bday = null;
             errorProvider.Clear();
-            errorProvider1.Clear();
+            
         }
        
         //check validation when typing a input
