@@ -40,13 +40,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SSNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Insert_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SSNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,7 +67,7 @@
             this.textBox3.Location = new System.Drawing.Point(209, 98);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 24);
+            this.textBox3.Size = new System.Drawing.Size(154, 21);
             this.textBox3.TabIndex = 26;
             // 
             // textBox2
@@ -78,7 +75,7 @@
             this.textBox2.Location = new System.Drawing.Point(209, 65);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 24);
+            this.textBox2.Size = new System.Drawing.Size(154, 21);
             this.textBox2.TabIndex = 25;
             // 
             // textBox1
@@ -86,7 +83,7 @@
             this.textBox1.Location = new System.Drawing.Point(209, 33);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 24);
+            this.textBox1.Size = new System.Drawing.Size(154, 21);
             this.textBox1.TabIndex = 24;
             // 
             // label4
@@ -96,7 +93,7 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(94, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 19);
+            this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 23;
             this.label4.Text = "Phone No";
             // 
@@ -107,7 +104,7 @@
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(94, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 19);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 22;
             this.label2.Text = "User Name";
             // 
@@ -118,7 +115,7 @@
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(94, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 19);
+            this.label1.Size = new System.Drawing.Size(22, 17);
             this.label1.TabIndex = 21;
             this.label1.Text = "ID";
             // 
@@ -130,7 +127,7 @@
             this.label5.ForeColor = System.Drawing.Color.Navy;
             this.label5.Location = new System.Drawing.Point(81, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(363, 31);
+            this.label5.Size = new System.Drawing.Size(302, 26);
             this.label5.TabIndex = 28;
             this.label5.Text = "Hospital Management System";
             // 
@@ -143,7 +140,7 @@
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Location = new System.Drawing.Point(170, 144);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(205, 27);
+            this.label6.Size = new System.Drawing.Size(163, 21);
             this.label6.TabIndex = 29;
             this.label6.Text = "Biology Department";
             // 
@@ -155,7 +152,7 @@
             this.label7.ForeColor = System.Drawing.Color.Navy;
             this.label7.Location = new System.Drawing.Point(50, 273);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(402, 31);
+            this.label7.Size = new System.Drawing.Size(350, 26);
             this.label7.TabIndex = 30;
             this.label7.Text = "Request List ________________________";
             // 
@@ -167,10 +164,7 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SSNo,
-            this.First_Name,
-            this.Last_Name,
-            this.Insert_Date});
+            this.SSNo});
             this.dataGridView1.Location = new System.Drawing.Point(56, 334);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -178,30 +172,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(809, 202);
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // SSNo
-            // 
-            this.SSNo.HeaderText = "SSNo";
-            this.SSNo.MinimumWidth = 6;
-            this.SSNo.Name = "SSNo";
-            // 
-            // First_Name
-            // 
-            this.First_Name.HeaderText = "Fname";
-            this.First_Name.MinimumWidth = 6;
-            this.First_Name.Name = "First_Name";
-            // 
-            // Last_Name
-            // 
-            this.Last_Name.HeaderText = "Lname";
-            this.Last_Name.MinimumWidth = 6;
-            this.Last_Name.Name = "Last_Name";
-            // 
-            // Insert_Date
-            // 
-            this.Insert_Date.HeaderText = "Insert_Date";
-            this.Insert_Date.MinimumWidth = 6;
-            this.Insert_Date.Name = "Insert_Date";
             // 
             // pictureBox3
             // 
@@ -239,12 +209,18 @@
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
+            // SSNo
+            // 
+            this.SSNo.HeaderText = "SSNo";
+            this.SSNo.MinimumWidth = 6;
+            this.SSNo.Name = "SSNo";
+            // 
             // Biology_Department
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(982, 661);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
@@ -259,6 +235,7 @@
             this.Name = "Biology_Department";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Biology_Department";
+            this.Load += new System.EventHandler(this.Biology_Department_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -283,12 +260,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SSNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn First_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Last_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Insert_Date;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SSNo;
     }
 }

@@ -26,5 +26,13 @@ namespace Hospital_Management_System
         {
 
         }
+
+        private void Biology_Department_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = DBconnection.id;
+            textBox2.Text = DBconnection.name;
+            textBox3.Text = DBconnection.phoneNumber;
+            DBconnection.DisplayUser("SELECT * FROM patientlab", dataGridView1);
+        }
     }
 }
