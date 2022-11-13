@@ -79,11 +79,13 @@ namespace Hospital_Management_System
             // btn_reset
             // 
             this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_reset.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_reset.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_reset.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(622, 863);
+            this.btn_reset.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_reset.Location = new System.Drawing.Point(275, 581);
+            this.btn_reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(128, 77);
+            this.btn_reset.Size = new System.Drawing.Size(94, 48);
             this.btn_reset.TabIndex = 39;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = false;
@@ -92,11 +94,13 @@ namespace Hospital_Management_System
             // btn_submit
             // 
             this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_submit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_submit.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_submit.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_submit.Location = new System.Drawing.Point(404, 863);
+            this.btn_submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_submit.Location = new System.Drawing.Point(153, 581);
+            this.btn_submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(129, 77);
+            this.btn_submit.Size = new System.Drawing.Size(94, 48);
             this.btn_submit.TabIndex = 38;
             this.btn_submit.Text = "Save";
             this.btn_submit.UseVisualStyleBackColor = false;
@@ -105,19 +109,20 @@ namespace Hospital_Management_System
             // txt_drName
             // 
             this.txt_drName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_drName.Location = new System.Drawing.Point(332, 157);
+            this.txt_drName.Location = new System.Drawing.Point(212, 107);
+            this.txt_drName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_drName.Name = "txt_drName";
-            this.txt_drName.Size = new System.Drawing.Size(278, 33);
+            this.txt_drName.Size = new System.Drawing.Size(248, 29);
             this.txt_drName.TabIndex = 57;
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(114, 160);
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(19, 107);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(176, 31);
+            this.label14.Size = new System.Drawing.Size(124, 24);
             this.label14.TabIndex = 55;
             this.label14.Text = "Doctor Name";
             // 
@@ -125,10 +130,10 @@ namespace Hospital_Management_System
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(114, 100);
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(19, 61);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 31);
+            this.label15.Size = new System.Drawing.Size(90, 24);
             this.label15.TabIndex = 54;
             this.label15.Text = "Specialist";
             // 
@@ -141,9 +146,11 @@ namespace Hospital_Management_System
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox1.Location = new System.Drawing.Point(291, 522);
+            this.groupBox1.Location = new System.Drawing.Point(21, 386);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(722, 278);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(534, 178);
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doctor Details";
@@ -152,10 +159,10 @@ namespace Hospital_Management_System
             // 
             this.comboBoxSpecialist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSpecialist.FormattingEnabled = true;
-            this.comboBoxSpecialist.Location = new System.Drawing.Point(331, 94);
-            this.comboBoxSpecialist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxSpecialist.Location = new System.Drawing.Point(212, 56);
+            this.comboBoxSpecialist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxSpecialist.Name = "comboBoxSpecialist";
-            this.comboBoxSpecialist.Size = new System.Drawing.Size(278, 37);
+            this.comboBoxSpecialist.Size = new System.Drawing.Size(248, 33);
             this.comboBoxSpecialist.TabIndex = 66;
             // 
             // groupBox2
@@ -183,21 +190,24 @@ namespace Hospital_Management_System
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.groupBox2.Location = new System.Drawing.Point(291, 51);
+            this.groupBox2.Location = new System.Drawing.Point(21, 11);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1593, 514);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1416, 354);
             this.groupBox2.TabIndex = 59;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Patient Details";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(114, 125);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(19, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 31);
+            this.label1.Size = new System.Drawing.Size(50, 24);
             this.label1.TabIndex = 77;
             this.label1.Text = "Date";
             // 
@@ -205,52 +215,56 @@ namespace Hospital_Management_System
             // 
             this.reg_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reg_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.reg_picker.Location = new System.Drawing.Point(332, 119);
-            this.reg_picker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reg_picker.Location = new System.Drawing.Point(213, 50);
+            this.reg_picker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reg_picker.Name = "reg_picker";
-            this.reg_picker.Size = new System.Drawing.Size(278, 35);
+            this.reg_picker.Size = new System.Drawing.Size(249, 30);
             this.reg_picker.TabIndex = 76;
             // 
             // txt_address
             // 
-            this.txt_address.Location = new System.Drawing.Point(1191, 323);
+            this.txt_address.Location = new System.Drawing.Point(706, 213);
+            this.txt_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_address.Multiline = true;
             this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(286, 107);
+            this.txt_address.Size = new System.Drawing.Size(210, 86);
             this.txt_address.TabIndex = 60;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(924, 323);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(564, 213);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 31);
+            this.label7.Size = new System.Drawing.Size(78, 24);
             this.label7.TabIndex = 75;
             this.label7.Text = "Address";
             // 
             // txt_Btype
             // 
             this.txt_Btype.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_Btype.Location = new System.Drawing.Point(1191, 251);
+            this.txt_Btype.Location = new System.Drawing.Point(706, 156);
+            this.txt_Btype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Btype.Name = "txt_Btype";
-            this.txt_Btype.Size = new System.Drawing.Size(286, 33);
+            this.txt_Btype.Size = new System.Drawing.Size(210, 29);
             this.txt_Btype.TabIndex = 74;
             // 
             // txt_height
             // 
             this.txt_height.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_height.Location = new System.Drawing.Point(1191, 191);
+            this.txt_height.Location = new System.Drawing.Point(706, 108);
+            this.txt_height.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_height.Name = "txt_height";
-            this.txt_height.Size = new System.Drawing.Size(286, 33);
+            this.txt_height.Size = new System.Drawing.Size(210, 29);
             this.txt_height.TabIndex = 73;
             // 
             // txt_weight
             // 
             this.txt_weight.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_weight.Location = new System.Drawing.Point(1191, 123);
+            this.txt_weight.Location = new System.Drawing.Point(706, 53);
+            this.txt_weight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_weight.Name = "txt_weight";
-            this.txt_weight.Size = new System.Drawing.Size(286, 33);
+            this.txt_weight.Size = new System.Drawing.Size(210, 29);
             this.txt_weight.TabIndex = 72;
             // 
             // radiobtn_female
@@ -258,9 +272,10 @@ namespace Hospital_Management_System
             this.radiobtn_female.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.radiobtn_female.AutoSize = true;
             this.radiobtn_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtn_female.Location = new System.Drawing.Point(514, 328);
+            this.radiobtn_female.Location = new System.Drawing.Point(375, 217);
+            this.radiobtn_female.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radiobtn_female.Name = "radiobtn_female";
-            this.radiobtn_female.Size = new System.Drawing.Size(109, 29);
+            this.radiobtn_female.Size = new System.Drawing.Size(86, 24);
             this.radiobtn_female.TabIndex = 68;
             this.radiobtn_female.Text = "Female";
             this.radiobtn_female.UseVisualStyleBackColor = true;
@@ -270,9 +285,10 @@ namespace Hospital_Management_System
             this.radiobtn_male.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.radiobtn_male.AutoSize = true;
             this.radiobtn_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtn_male.Location = new System.Drawing.Point(332, 328);
+            this.radiobtn_male.Location = new System.Drawing.Point(213, 217);
+            this.radiobtn_male.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radiobtn_male.Name = "radiobtn_male";
-            this.radiobtn_male.Size = new System.Drawing.Size(85, 29);
+            this.radiobtn_male.Size = new System.Drawing.Size(67, 24);
             this.radiobtn_male.TabIndex = 67;
             this.radiobtn_male.Text = "Male";
             this.radiobtn_male.UseVisualStyleBackColor = true;
@@ -281,43 +297,47 @@ namespace Hospital_Management_System
             // 
             this.birth_picker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.birth_picker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birth_picker.Location = new System.Drawing.Point(332, 383);
+            this.birth_picker.Location = new System.Drawing.Point(213, 261);
+            this.birth_picker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.birth_picker.Name = "birth_picker";
-            this.birth_picker.Size = new System.Drawing.Size(278, 28);
+            this.birth_picker.Size = new System.Drawing.Size(249, 24);
             this.birth_picker.TabIndex = 66;
             // 
             // txt_phone
             // 
             this.txt_phone.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_phone.Location = new System.Drawing.Point(332, 445);
+            this.txt_phone.Location = new System.Drawing.Point(213, 311);
+            this.txt_phone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(278, 33);
+            this.txt_phone.Size = new System.Drawing.Size(249, 29);
             this.txt_phone.TabIndex = 65;
             // 
             // txt_lname
             // 
             this.txt_lname.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_lname.Location = new System.Drawing.Point(332, 249);
+            this.txt_lname.Location = new System.Drawing.Point(213, 154);
+            this.txt_lname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_lname.Name = "txt_lname";
-            this.txt_lname.Size = new System.Drawing.Size(278, 33);
+            this.txt_lname.Size = new System.Drawing.Size(249, 29);
             this.txt_lname.TabIndex = 64;
             // 
             // txt_fname
             // 
             this.txt_fname.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_fname.Location = new System.Drawing.Point(332, 189);
+            this.txt_fname.Location = new System.Drawing.Point(213, 106);
+            this.txt_fname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_fname.Name = "txt_fname";
-            this.txt_fname.Size = new System.Drawing.Size(278, 33);
+            this.txt_fname.Size = new System.Drawing.Size(249, 29);
             this.txt_fname.TabIndex = 63;
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(924, 252);
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(564, 157);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 31);
+            this.label11.Size = new System.Drawing.Size(107, 24);
             this.label11.TabIndex = 62;
             this.label11.Text = "Blood Type";
             // 
@@ -325,10 +345,10 @@ namespace Hospital_Management_System
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(924, 189);
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(564, 106);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 31);
+            this.label10.Size = new System.Drawing.Size(68, 24);
             this.label10.TabIndex = 61;
             this.label10.Text = "Height";
             // 
@@ -336,10 +356,10 @@ namespace Hospital_Management_System
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(924, 123);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(564, 53);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 31);
+            this.label9.Size = new System.Drawing.Size(72, 24);
             this.label9.TabIndex = 60;
             this.label9.Text = "Weight";
             // 
@@ -347,10 +367,10 @@ namespace Hospital_Management_System
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(114, 445);
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(19, 311);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 31);
+            this.label6.Size = new System.Drawing.Size(94, 24);
             this.label6.TabIndex = 57;
             this.label6.Text = "Phone No";
             // 
@@ -358,10 +378,10 @@ namespace Hospital_Management_System
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(114, 383);
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(19, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 31);
+            this.label5.Size = new System.Drawing.Size(97, 24);
             this.label5.TabIndex = 56;
             this.label5.Text = "Birth Date";
             // 
@@ -369,10 +389,10 @@ namespace Hospital_Management_System
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(114, 328);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 31);
+            this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 55;
             this.label4.Text = "Gender";
             // 
@@ -380,10 +400,10 @@ namespace Hospital_Management_System
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(114, 254);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 31);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 54;
             this.label3.Text = "Last Name";
             // 
@@ -391,10 +411,10 @@ namespace Hospital_Management_System
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(114, 194);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 31);
+            this.label2.Size = new System.Drawing.Size(102, 24);
             this.label2.TabIndex = 53;
             this.label2.Text = "First Name";
             // 
@@ -402,9 +422,10 @@ namespace Hospital_Management_System
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1302, 765);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 587);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(444, 292);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
@@ -429,12 +450,13 @@ namespace Hospital_Management_System
             this.dataGridView2.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.GridColor = System.Drawing.Color.DarkGray;
-            this.dataGridView2.Location = new System.Drawing.Point(1059, 611);
+            this.dataGridView2.Location = new System.Drawing.Point(604, 431);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(608, 148);
+            this.dataGridView2.Size = new System.Drawing.Size(370, 198);
             this.dataGridView2.TabIndex = 78;
             // 
             // label8
@@ -442,20 +464,22 @@ namespace Hospital_Management_System
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1039, 568);
+            this.label8.Location = new System.Drawing.Point(671, 395);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 27);
+            this.label8.Size = new System.Drawing.Size(76, 24);
             this.label8.TabIndex = 79;
             this.label8.Text = "Doctors";
             // 
             // btn_back
             // 
             this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_back.BackColor = System.Drawing.Color.PowderBlue;
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_back.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(849, 863);
+            this.btn_back.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_back.Location = new System.Drawing.Point(396, 581);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(128, 77);
+            this.btn_back.Size = new System.Drawing.Size(96, 48);
             this.btn_back.TabIndex = 80;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = false;
@@ -463,10 +487,10 @@ namespace Hospital_Management_System
             // 
             // PatientDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1542, 937);
+            this.ClientSize = new System.Drawing.Size(982, 653);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView2);
@@ -475,10 +499,12 @@ namespace Hospital_Management_System
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_submit);
-            this.MinimumSize = new System.Drawing.Size(1530, 888);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1000, 700);
+            this.MinimumSize = new System.Drawing.Size(800, 700);
             this.Name = "PatientDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Details";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PatientDetails_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

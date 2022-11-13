@@ -24,6 +24,11 @@ namespace Hospital_Management_System
             InitializeComponent();
             _parent = parent;
         }
+
+        public Add_User()
+        {
+        }
+
         private void Add_User_Load(object sender, EventArgs e)
         {
             //add user type dropdown menu values

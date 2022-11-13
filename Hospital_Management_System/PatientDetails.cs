@@ -178,6 +178,11 @@ namespace Hospital_Management_System
             this.Close();
         }
 
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void Patient_Reg_Load(object sender, EventArgs e)
         {
             Display();

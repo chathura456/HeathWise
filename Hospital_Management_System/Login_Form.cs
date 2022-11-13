@@ -16,6 +16,11 @@ namespace Hospital_Management_System
         public string emailPattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
         public string id1, fname1, lname1, gender1, birth1, phone1, special1, reg_date1, email1, password1, type1;
 
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void txt_pass_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txt_pass.Text.Trim()))

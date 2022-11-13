@@ -24,6 +24,10 @@ namespace Hospital_Management_System
             _parent = parent;
         }
 
+        public PatientPrescription()
+        {
+        }
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //get the user inputs

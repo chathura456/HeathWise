@@ -77,5 +77,10 @@ namespace Hospital_Management_System
         {
             this.Hide();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

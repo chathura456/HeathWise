@@ -112,7 +112,17 @@ namespace Hospital_Management_System
 
         }
 
-        private void lblid_TextChanged(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
