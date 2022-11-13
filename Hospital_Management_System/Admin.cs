@@ -37,6 +37,8 @@ namespace Hospital_Management_System
             textBox3.Text=phone;
         }
 
+
+        //setting buttons
         private void button4_Click(object sender, EventArgs e)
         {
             PatientDetails patientDetails = new PatientDetails();
@@ -62,6 +64,13 @@ namespace Hospital_Management_System
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+        //locg out button
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

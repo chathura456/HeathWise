@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Biology_Department));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,7 +44,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.SSNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,7 +69,7 @@
             this.textBox3.Location = new System.Drawing.Point(209, 98);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 21);
+            this.textBox3.Size = new System.Drawing.Size(154, 27);
             this.textBox3.TabIndex = 26;
             // 
             // textBox2
@@ -75,7 +77,7 @@
             this.textBox2.Location = new System.Drawing.Point(209, 65);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 21);
+            this.textBox2.Size = new System.Drawing.Size(154, 27);
             this.textBox2.TabIndex = 25;
             // 
             // textBox1
@@ -83,7 +85,7 @@
             this.textBox1.Location = new System.Drawing.Point(209, 33);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 21);
+            this.textBox1.Size = new System.Drawing.Size(154, 27);
             this.textBox1.TabIndex = 24;
             // 
             // label4
@@ -93,7 +95,7 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(94, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.Size = new System.Drawing.Size(102, 25);
             this.label4.TabIndex = 23;
             this.label4.Text = "Phone No";
             // 
@@ -104,7 +106,7 @@
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(94, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
+            this.label2.Size = new System.Drawing.Size(111, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "User Name";
             // 
@@ -115,7 +117,7 @@
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(94, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 17);
+            this.label1.Size = new System.Drawing.Size(32, 25);
             this.label1.TabIndex = 21;
             this.label1.Text = "ID";
             // 
@@ -127,7 +129,7 @@
             this.label5.ForeColor = System.Drawing.Color.Navy;
             this.label5.Location = new System.Drawing.Point(81, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(302, 26);
+            this.label5.Size = new System.Drawing.Size(442, 37);
             this.label5.TabIndex = 28;
             this.label5.Text = "Hospital Management System";
             // 
@@ -140,7 +142,7 @@
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Location = new System.Drawing.Point(170, 144);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 21);
+            this.label6.Size = new System.Drawing.Size(244, 31);
             this.label6.TabIndex = 29;
             this.label6.Text = "Biology Department";
             // 
@@ -152,7 +154,7 @@
             this.label7.ForeColor = System.Drawing.Color.Navy;
             this.label7.Location = new System.Drawing.Point(50, 273);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(350, 26);
+            this.label7.Size = new System.Drawing.Size(509, 37);
             this.label7.TabIndex = 30;
             this.label7.Text = "Request List ________________________";
             // 
@@ -164,7 +166,7 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SSNo});
+            this.Column1});
             this.dataGridView1.Location = new System.Drawing.Point(56, 334);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -209,18 +211,42 @@
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // SSNo
+            // button5
             // 
-            this.SSNo.HeaderText = "SSNo";
-            this.SSNo.MinimumWidth = 6;
-            this.SSNo.Name = "SSNo";
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(23, 195);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "Log out";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "Files";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "Files";
+            this.Column1.UseColumnTextForButtonValue = true;
             // 
             // Biology_Department
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(982, 661);
+            this.ClientSize = new System.Drawing.Size(978, 644);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
@@ -263,6 +289,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SSNo;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewButtonColumn Column1;
     }
 }

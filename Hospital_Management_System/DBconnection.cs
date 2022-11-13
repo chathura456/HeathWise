@@ -369,6 +369,7 @@ namespace Hospital_Management_System
                 {
                     diagnosis = null;
                     medicine = null;
+                    profilename = null;
                 }
             }
             catch (MySqlException ex)

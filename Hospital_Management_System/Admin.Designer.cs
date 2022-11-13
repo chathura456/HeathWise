@@ -46,6 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,7 +61,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(112, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 27);
+            this.label1.Size = new System.Drawing.Size(41, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -72,7 +73,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(112, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 27);
+            this.label2.Size = new System.Drawing.Size(148, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name";
             // 
@@ -84,7 +85,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(112, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 27);
+            this.label3.Size = new System.Drawing.Size(135, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "Phone No";
             // 
@@ -94,7 +95,7 @@
             this.textBox1.Location = new System.Drawing.Point(257, 42);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 29);
+            this.textBox1.Size = new System.Drawing.Size(163, 33);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
@@ -103,7 +104,7 @@
             this.textBox2.Location = new System.Drawing.Point(257, 103);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 29);
+            this.textBox2.Size = new System.Drawing.Size(163, 33);
             this.textBox2.TabIndex = 4;
             // 
             // textBox3
@@ -112,7 +113,7 @@
             this.textBox3.Location = new System.Drawing.Point(257, 167);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 29);
+            this.textBox3.Size = new System.Drawing.Size(163, 33);
             this.textBox3.TabIndex = 5;
             // 
             // button1
@@ -175,7 +176,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Snow;
             this.linkLabel1.Location = new System.Drawing.Point(155, 208);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(99, 23);
+            this.linkLabel1.Size = new System.Drawing.Size(115, 27);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit Profile";
@@ -189,7 +190,7 @@
             this.label9.ForeColor = System.Drawing.Color.SteelBlue;
             this.label9.Location = new System.Drawing.Point(483, 135);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(442, 37);
+            this.label9.Size = new System.Drawing.Size(519, 44);
             this.label9.TabIndex = 13;
             this.label9.Text = "Hospital Management System";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -203,7 +204,7 @@
             this.label10.ForeColor = System.Drawing.Color.SteelBlue;
             this.label10.Location = new System.Drawing.Point(544, 186);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(272, 27);
+            this.label10.Size = new System.Drawing.Size(327, 31);
             this.label10.TabIndex = 14;
             this.label10.Text = "Administration Department";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -274,13 +275,30 @@
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(34, 246);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(147, 41);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "Log out";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(978, 644);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox3);
@@ -327,6 +345,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button5;
     }
 }
 
