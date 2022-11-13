@@ -41,11 +41,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SSNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Insert_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Insert_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,6 +95,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 24);
             this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -125,6 +123,7 @@
             this.label1.Size = new System.Drawing.Size(23, 19);
             this.label1.TabIndex = 21;
             this.label1.Text = "ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -170,9 +169,6 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SSNo,
-            this.First_Name,
-            this.Last_Name,
             this.Insert_Date});
             this.dataGridView1.Location = new System.Drawing.Point(669, 296);
             this.dataGridView1.Name = "dataGridView1";
@@ -181,30 +177,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(786, 217);
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // SSNo
-            // 
-            this.SSNo.HeaderText = "SSNo";
-            this.SSNo.MinimumWidth = 6;
-            this.SSNo.Name = "SSNo";
-            // 
-            // First_Name
-            // 
-            this.First_Name.HeaderText = "Fname";
-            this.First_Name.MinimumWidth = 6;
-            this.First_Name.Name = "First_Name";
-            // 
-            // Last_Name
-            // 
-            this.Last_Name.HeaderText = "Lname";
-            this.Last_Name.MinimumWidth = 6;
-            this.Last_Name.Name = "Last_Name";
-            // 
-            // Insert_Date
-            // 
-            this.Insert_Date.HeaderText = "Insert_Date";
-            this.Insert_Date.MinimumWidth = 6;
-            this.Insert_Date.Name = "Insert_Date";
             // 
             // pictureBox3
             // 
@@ -216,6 +188,12 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
+            // 
+            // Insert_Date
+            // 
+            this.Insert_Date.HeaderText = "Insert_Date";
+            this.Insert_Date.MinimumWidth = 6;
+            this.Insert_Date.Name = "Insert_Date";
             // 
             // Biology_Department
             // 
@@ -240,6 +218,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Biology_Department";
             this.Text = "Biology_Department";
+            this.Load += new System.EventHandler(this.Biology_Department_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -263,10 +242,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SSNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn First_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Last_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Insert_Date;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Insert_Date;
     }
 }

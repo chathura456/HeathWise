@@ -112,6 +112,11 @@ namespace Hospital_Management_System
 
         }
 
+        private void lblid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Doctor_Department_Load_1(object sender, EventArgs e)
         {
             id = DBconnection.id;

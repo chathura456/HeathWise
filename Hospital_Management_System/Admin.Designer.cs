@@ -58,9 +58,10 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(272, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 31);
+            this.label1.Size = new System.Drawing.Size(35, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -70,7 +71,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(272, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 31);
+            this.label2.Size = new System.Drawing.Size(125, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name";
             // 
@@ -82,7 +83,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(272, 210);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 31);
+            this.label3.Size = new System.Drawing.Size(112, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Phone No";
             // 
@@ -92,7 +93,7 @@
             this.textBox1.Location = new System.Drawing.Point(424, 89);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 33);
+            this.textBox1.Size = new System.Drawing.Size(163, 29);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
@@ -101,7 +102,7 @@
             this.textBox2.Location = new System.Drawing.Point(424, 156);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 33);
+            this.textBox2.Size = new System.Drawing.Size(163, 29);
             this.textBox2.TabIndex = 4;
             // 
             // textBox3
@@ -110,7 +111,7 @@
             this.textBox3.Location = new System.Drawing.Point(424, 220);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 33);
+            this.textBox3.Size = new System.Drawing.Size(163, 29);
             this.textBox3.TabIndex = 5;
             // 
             // button1
@@ -172,7 +173,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Snow;
             this.linkLabel1.Location = new System.Drawing.Point(315, 252);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 27);
+            this.linkLabel1.Size = new System.Drawing.Size(99, 23);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit Profile";
@@ -186,7 +187,7 @@
             this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label9.Location = new System.Drawing.Point(986, 89);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(706, 59);
+            this.label9.Size = new System.Drawing.Size(581, 50);
             this.label9.TabIndex = 13;
             this.label9.Text = "Hospital Management System";
             // 
@@ -199,7 +200,7 @@
             this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label10.Location = new System.Drawing.Point(988, 146);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(493, 46);
+            this.label10.Size = new System.Drawing.Size(409, 39);
             this.label10.TabIndex = 14;
             this.label10.Text = "Administration Department";
             // 
@@ -257,7 +258,7 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.BackgroundImage = global::Hospital_Management_System.Properties.Resources.WhatsApp_Image_2022_10_25_at_00_00_34;
