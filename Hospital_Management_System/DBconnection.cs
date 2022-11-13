@@ -15,7 +15,8 @@ namespace Hospital_Management_System
     public class DBconnection
     {
         public static string id, name,specialist,phoneNumber;
-       public static string diagnosis, medicine,profileid,profilename;
+        public static string diagnosis, medicine,profileid,profilename;
+
         //create mysql connection
         public static MySqlConnection GetConnection()
         {

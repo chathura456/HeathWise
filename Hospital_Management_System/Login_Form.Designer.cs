@@ -57,7 +57,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(106, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(940, 50);
+            this.label1.Size = new System.Drawing.Size(767, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "WELCOME TO HOSPITAL MANAGEMENT SYSTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -70,7 +70,7 @@
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(31, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 27);
+            this.label2.Size = new System.Drawing.Size(59, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Email:";
             // 
@@ -94,14 +94,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.AliceBlue;
             this.button1.Location = new System.Drawing.Point(169, 244);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 47);
             this.button1.TabIndex = 6;
             this.button1.Text = "Login";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,10 +111,11 @@
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(145, 197);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(151, 24);
+            this.checkBox1.Size = new System.Drawing.Size(128, 20);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Display Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txt_pass
             // 
@@ -122,7 +123,7 @@
             this.txt_pass.Location = new System.Drawing.Point(143, 127);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(5);
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(288, 35);
+            this.txt_pass.Size = new System.Drawing.Size(288, 30);
             this.txt_pass.TabIndex = 4;
             this.txt_pass.UseSystemPasswordChar = true;
             this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
@@ -132,7 +133,7 @@
             this.txt_email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.Location = new System.Drawing.Point(143, 50);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(288, 35);
+            this.txt_email.Size = new System.Drawing.Size(288, 30);
             this.txt_email.TabIndex = 3;
             this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             // 
@@ -143,7 +144,7 @@
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(31, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 27);
+            this.label3.Size = new System.Drawing.Size(94, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
             // 
@@ -177,10 +178,10 @@
             // 
             // Login_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 10F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(982, 661);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);

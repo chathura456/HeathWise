@@ -75,11 +75,13 @@ namespace Hospital_Management_System
         //submit button
         private void button1_Click(object sender, EventArgs e)
         {
+            //get values from textboxes
             var fname = txt_fname.Text;
             var lname = txt_lname.Text;
             var phone = txt_phone.Text;
             var email = txt_uname.Text;
             var pass = txt_pass.Text;
+
             //get values from radio button
             if (radiobtn_male.Checked)
             {
@@ -89,6 +91,8 @@ namespace Hospital_Management_System
             {
                 gender = radiobtn_female.Text;
             }
+
+            //error handling
             if (type == null)
             {
                 dropdown_type.Focus();
@@ -199,6 +203,12 @@ namespace Hospital_Management_System
             else
             {
                 dropdown_spc.Enabled = false;
+                errorProvider.Clear();
+                if(specialist!=null)
+                {
+                    dropdown_spc.ResetText();
+                }
+                
             }
         }
 

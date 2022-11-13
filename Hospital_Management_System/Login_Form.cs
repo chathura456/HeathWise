@@ -21,6 +21,18 @@ namespace Hospital_Management_System
 
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                txt_pass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txt_pass.UseSystemPasswordChar = true;
+            }
+        }
+
         private void txt_pass_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txt_pass.Text.Trim()))

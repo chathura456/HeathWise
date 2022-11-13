@@ -39,9 +39,9 @@ namespace Hospital_Management_System
         //set values to datagridview
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //edit user button
             if (e.ColumnIndex == 0)
             {
-                //edit user button
                 form.Clear();
                 form.id1 = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 form.fname1=dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -59,9 +59,9 @@ namespace Hospital_Management_System
                 return;
             }
 
-            if(e.ColumnIndex == 1)
+            //delete user button
+            if (e.ColumnIndex == 1)
             {
-                //delete user button
                 if(MessageBox.Show("Are You want to delete this user record?", "Information", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     DBconnection.DeleteUser(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
@@ -70,6 +70,7 @@ namespace Hospital_Management_System
                 return;
             }
         }
+
         //back button
         private void button2_Click(object sender, EventArgs e)
         {
