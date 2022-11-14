@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2022 at 07:22 AM
+-- Generation Time: Nov 14, 2022 at 07:44 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -175,7 +175,8 @@ INSERT INTO `users` (`Id`, `First_Name`, `Last_name`, `Gender`, `Birth_Date`, `P
 (42714, 'John', 'Doe', 'Male', '11/24/2022', '0712458789', NULL, '11/15/2022', 'john@gmail.com', '1234', 'Receptionist'),
 (42716, 'Evelyn', 'Adams', 'Female', '11/18/2022', '0756585412', NULL, '11/17/2022', 'eve@gmail.com', '1234', 'Biologist'),
 (42717, 'Alex', 'Hales', 'Male', '11/24/2022', '0751414125', NULL, '11/21/2022', 'alexx@gmail.com', '1234', 'Pharmacist'),
-(42718, 'Elena', 'Hoper', 'Female', '11/08/2022', '0114758678', NULL, '11/15/2022', 'elena@gmail.com', '1234', 'Pharmacist');
+(42718, 'Elena', 'Hoper', 'Female', '11/08/2022', '0114758678', NULL, '11/15/2022', 'elena@gmail.com', '1234', 'Pharmacist'),
+(42724, 'Lary', 'Parker', 'Male', '11/23/2022', '0752587658', NULL, '11/30/2022', 'lary@gmail.com', '1234', 'Patient');
 
 --
 -- Indexes for dumped tables
@@ -208,7 +209,7 @@ ALTER TABLE `patientsdetails`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42720;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42725;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
