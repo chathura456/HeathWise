@@ -58,6 +58,7 @@ namespace Hospital_Management_System
             }
         }
 
+        //login button
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -77,7 +78,6 @@ namespace Hospital_Management_System
                 string pass = txt_pass.Text.Trim();
                 User user = new User(id1, fname1, lname1, gender1, birth1, phone1, special1, reg_date1, email1, password1, type1);
                 DBconnection.UserLogin(email, pass, user);
-
 
                 type1 = user.type;
                 if (type1 == "Doctor")

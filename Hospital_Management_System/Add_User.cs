@@ -190,11 +190,14 @@ namespace Hospital_Management_System
         //set variables to dropdown inputs
         private void dropdown_spc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            specialist = dropdown_spc.SelectedItem.ToString();
+            
+                specialist = dropdown_spc.SelectedItem.ToString();
+      
         }
         private void dropdown_type_SelectedIndexChanged(object sender, EventArgs e)
         {
             type = dropdown_type.SelectedItem.ToString();
+
             //specialist dropdown enabled when Doctor value selected in user type menu
             if (type == "Doctor")
             {
@@ -206,9 +209,12 @@ namespace Hospital_Management_System
                 errorProvider.Clear();
                 if(specialist!=null)
                 {
-                    dropdown_spc.ResetText();
-                }
-                
+                    dropdown_spc.ResetText();               
+                }               
+            }
+            if (dropdown_spc.Enabled == false)
+            {
+                specialist = null;
             }
         }
 
@@ -359,7 +365,7 @@ namespace Hospital_Management_System
             
         }
        
-        //check validation when typing a input
+        //check validation when typing a email & password
         private void txt_uname_TextChanged(object sender, EventArgs e)
         {
             if (Regex.IsMatch(txt_uname.Text, emailPattern) == false)

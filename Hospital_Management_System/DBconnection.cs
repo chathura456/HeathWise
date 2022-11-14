@@ -154,7 +154,11 @@ namespace Hospital_Management_System
                     name = reader["First_name"].ToString();
                     specialist = reader["Specialist"].ToString();
                     phoneNumber = reader["Phone_No"].ToString();
-                    MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (user.type != "Patient")
+                    {
+                        MessageBox.Show("Login Successfully! \n", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    
 
 
                 }
